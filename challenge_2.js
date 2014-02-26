@@ -20,6 +20,6 @@ exports.sumOfEvenFibonacciNumbers = function(n){
     }
 
   }
-  console.log(baseArray);
+  console.log(sum);
   return sum;
 };

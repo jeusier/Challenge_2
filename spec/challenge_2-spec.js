@@ -12,7 +12,7 @@ describe("Sum of even numbers in the fibonnaci sequence", function () {
   
   it("should return 'X' for n=4,000,000", function () {
     var sum = challenge_2.sumOfEvenFibonacciNumbers(4000000);
-    expect(X).toBe(sum); // CHANGE THE VALUE OF X to the correct number
+    expect(4613732).toBe(sum); // CHANGE THE VALUE OF X to the correct number
   });
 
 });    
