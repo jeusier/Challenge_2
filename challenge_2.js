@@ -2,24 +2,26 @@ exports.sumOfEvenFibonacciNumbers = function(n){
   var sum = 0;
   // do your work here
   var baseArray = [0, 1, 1];
-  //var baseLength = baseArray.length;
-  //console.log("sum before: "+sum);
 
+  //loop through all numbers
   for (var i = 0; i < n; i++) {
+    //add the last two numbers of the array
     var sumOfTwoNumbers = baseArray[baseArray.length - 1] + baseArray[baseArray.length - 2];
-    //console.log("i "+i);
-    //console.log("sum: "+sumOfTwoNumbers);
+    //check if i is a Fibonacci Number then push to array
     if (i == sumOfTwoNumbers) {
-        //console.log("i: "+i);
         baseArray.push(i);
+        //check if i is an even Fibonacci Number, then add to sum
         if (i%2 == 0){
-
         sum += i;
-    }
-        //console.log("sum after: "+sum);
-    }
+        console.log("pre-sum: "+sum);
+        } //end of if (i%2 == 0)
 
-  }
-  console.log(sum);
+    } //end of if (i == sumOfTwoNumbers)
+
+  } //end of for loop
+
+  console.log("array: "+baseArray);
+  console.log("sum: "+sum);
   return sum;
-};
+
+}; //end of sumOfEvenFibonacciNumbers
